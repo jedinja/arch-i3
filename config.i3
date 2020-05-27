@@ -53,6 +53,11 @@ bindsym XF86AudioPrev exec playerctl previous
 bindsym XF86MonBrightnessUp exec --no-startup-id light -A 5
 bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5
 
+### Nighttime controls ###
+##########################
+bindsym $mod2+n exec --no-startup-id xrandr --output eDP1 --gamma 1:1:1 --brightness 1
+bindsym $mod2+SHIFT+n exec --no-startup-id xrandr --output eDP1 --gamma 0.8:0.8:0.7 --brightness 0.9
+
 ### JetBrains Toolbox ###
 #########################
 
