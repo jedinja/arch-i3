@@ -150,11 +150,11 @@ bindsym $mod2+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1"
-set $ws2 "2"
-set $ws3 "3"
-set $ws4 "4"
-set $ws5 "5"
+set $ws1 "1:Browsers"
+set $ws2 "2:Chats"
+set $ws3 "3:Dev"
+set $ws4 "4:Run"
+set $ws5 "5:Fun"
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
@@ -223,7 +223,17 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3status
-        font pango:monospace 12 
+        font pango:monospace 12
+        mode hide
+        modifier $mod2
+        position top
+        colors {
+                background #333333
+                statusline #ffe57c
+        }
+        separator_symbol "  "
+        workspace_min_width 80
+        strip_workspace_numbers yes 
 }
 
 ### It seems it is a lot more harder to configure the secon monitor through xorg.conf, so xrandr to the rescue ###
