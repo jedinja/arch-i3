@@ -224,14 +224,15 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
         font pango:monospace 12
-        mode hide
+#       mode hide
         modifier $mod2
-        position top
+#       position top
         colors {
                 background #333333
-                statusline #ffe57c
+#               statusline #ffe57c
+                separator #0373bc
         }
-        separator_symbol "  "
+        separator_symbol "|"
         workspace_min_width 80
         strip_workspace_numbers yes 
 }
