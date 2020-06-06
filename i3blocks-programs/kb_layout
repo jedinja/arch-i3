@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+setxkbmap -query | tail -n 1 | cut -d ' ' -f 2- | sed 's/^[ \t]*//;s/[ \t]*$//'
+exit 0
