@@ -1,0 +1,2 @@
+# nuckodi nuget repo
+nuckodi:/srv/nfs/nuget   /home/jedinja/dev/nuget_nuckodi   nfs   defaults,timeo=900,retrans=5,_netdev	0 0
